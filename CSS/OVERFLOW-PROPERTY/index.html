@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow property</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* overflow: scroll; */
+            overflow: auto;
+            /* auto yeh krta hai ki agr zarurat hoti hai scroll bar ki toh layegea wrna nhi layega */
+
+            /* white-space: nowrap; */
+            /* text-overflow: ellipsis; */
+
+            /* controlling overflow x and y in different terms  */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        i am a good boy Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, eos, voluptatum laudantium quo
+        harum culpa a sint magni mollitia possimus nostrum, nesciunt vero corrupti libero est in! Minus esse eveniet
+        temporibus illum autem molestias, blanditiis neque voluptate incidunt corrupti ex cumque, non beatae explicabo
+        fugiat.
+    </div>
+</body>
+
+</html>

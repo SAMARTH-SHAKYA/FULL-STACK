@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+            /* root element */
+        }
+        .box{
+            border: 2px solid black;
+            /* width: 300px; */
+            width: 80vw;
+            margin: auto;
+            background-color: aqua;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 300px; */
+            width: 80vw;
+            margin: 23px auto;
+            font-size: 16px;
+            min-height: 80vh;
+            background-color: aqua;
+        }
+
+        .container p{
+            /* font-size: 1.2em; */
+            /* parent ke size ka 1.2 times ho jata hai */
+
+            font-size: 2rem;
+            /* root element ka 2 times joh html mai hai */
+            border: 2px solid red;
+            width: 50%;
+            /* parent ki 50 percent */
+
+        }
+        .mycount{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident sint laudantium magnam unde consequuntur, pariatur non aut reiciendis exercitationem a voluptate dolores qui ad recusandae impedit temporibus distinctio asperiores minima sit laborum ducimus animi? Minima rem saepe officiis, dolores voluptates similique maiores nostrum sunt a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quam quaerat. Quasi reiciendis architecto eius necessitatibus, porro laboriosam eveniet doloremque labore consectetur dolor officia asperiores adipisci quas ipsa, corporis enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium eos explicabo soluta veniam aut sint sapiente quaerat beatae, vero nesciunt a maxime quasi, laborum libero id amet mollitia molestiae similique illum quis quidem pariatur voluptatibus necessitatibus. Assumenda repudiandae tenetur voluptate laudantium consequuntur vero optio magni rerum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi possimus quis unde laborum? Aspernatur, explicabo beatae. Et commodi, harum dolores numquam facere, rem cumque eligendi eius laudantium nesciunt, ratione maxime dolorum officiis est suscipit nobis. Similique aliquam quidem, ea nobis quo repudiandae nisi voluptatem optio beatae a. Fuga dolorem voluptates magni adipisci voluptas sint et eum? Culpa itaque facere aut, commodi, accusamus dolor molestias nihil provident quod consequuntur quos laboriosam! Velit, animi? Exercitationem ut, officia pariatur quo facere atque velit dignissimos esse aut ipsa unde in perspiciatis repellendus perferendis.</p>
+    </div>
+
+    <div class="mycount">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum et quaerat nihil fugit quos magni amet vel, commodi doloribus libero perferendis consequuntur fugiat, sunt placeat incidunt. Eaque unde quidem similique!
+    </div>
+</body>
+
+</html>
