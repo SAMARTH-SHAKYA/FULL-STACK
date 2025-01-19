@@ -7,14 +7,117 @@
     <title>Card</title>
     <style>
 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            margin-top: 2vh;
+            border: 1px solid black;
+            height: 55vh;
+            width: 50vw;
+            border-radius: 10px;
+            
+            
+        }
+        .photo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo img {
+            margin-top: 0.8vh;
+            width: 95%;
+            height: 25vh;
+            border-radius: 10px;
+        }
+
+        .features ul{
+            display: flex;
+            margin: 1vh;
+            list-style: none;
+            
+        }
+        .features ul li{
+            margin-left: 2vh;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow : hidden;
+        }
+        .heading{
+            margin: 0.8vh;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .about{
+            margin: 1vh;
+            margin-top: 2vh;
+            box-sizing: border-box;
+            height: 19%;
+            overflow-y: hidden;
+            white-space: wrap;
+        }
+        .read_more{
+            margin-top: 2vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .read_more span{
+            border: 1px;
+            background-color: rgb(168, 229, 251);
+            width: 40%;
+            height: 4vh;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+
+
     </style>
 </head>
 
 <body>
     <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
-     <div class="card">
-        
-     </div>
+    <div class="card">
+        <div class="photo">
+            <img src="./image.png" alt="lake">
+        </div>
+        <div class="features">
+            <ul>
+                <li>Nature</li>
+                <li>Lake</li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h2>Lorem, ipsum dolor.</h2>
+        </div>
+        <div class="about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae impedit nesciunt explicabo pariatur
+            possimus ipsam maiores modi, velit facilis laudantium quam eius!
+        </div>
+        <div class="read_more">
+            <span>Read more</span>
+        </div>
+    </div>
 </body>
 
 </html>
